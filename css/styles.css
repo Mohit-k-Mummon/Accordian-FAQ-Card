@@ -26,22 +26,27 @@ body {
 }
 
 .main-container {
-    width: 85%;
-    flex-direction: column;
+    align-items: center;
     background-color: aliceblue;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: fit-content;
     position: relative;
-    display: flex;
-    align-items: center;
+    width: 85%;
 }
 
 .bg-woman-mobile{
-    position: absolute;
-    max-width: 300px;
-    top: -130px;
-    z-index: 2;
+    background-image: url(../images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
     width: 100%;
+    max-width: 400px;
+    padding: 20rem;
+    position: absolute;
+    background-position: center;
+    top: -220px;
 }
 
 .bg-pattern {
@@ -87,14 +92,14 @@ body {
     position: absolute;
     right: 20px;
     transition: 0.3s;
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 .accordian-container .content-container .answer {
-    max-height: 0;
-    overflow: hidden;
+    max-height: 0vh;
     opacity: 0;
     line-height: 1.5;
+    transition: max-height 0.3s, opacity 0.3s;
 }
 
 .question {
@@ -113,15 +118,72 @@ body {
 
 /* JavaScript styling link */
 .accordian-container .content-container.active .answer {
-    max-height: fit-content;
+    max-height: 100vh;
     opacity: 1;
 }
 
 .accordian-container .content-container.active .question::after {
-    transform: rotate(90deg);
+    transform: rotate(90deg) scale(1.6);
 }
 
 
+
+
+
+@media screen and (min-width: 1024px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 900px;
+    }
+
+    .main-heading {
+        text-align: left;
+        margin: 0 0 2rem;
+        padding-right: 23rem;
+    }
+
+    .accordian-container {
+        max-width: 400px;
+        padding: 2rem 5rem 2rem 0 ;
+        text-align: left;
+        position: relative;
+        right: 50px;
+    }
+
+    .bg-woman-mobile{
+        background-image: url(../images/illustration-woman-online-mobile.svg);
+        position: relative;
+        background-size: 90%;
+        top: 10px;
+        right: 80px;
+        padding: 25rem;
+        z-index: 2;
+    }
+    
+    .bg-pattern {
+        position: absolute;
+        top: 400px;
+        left: -60px;
+        transform: scale(2);
+        max-width: 300px;
+        z-index: 1;
+    }
+}
+
+/* .bg-woman-mobile{
+    background-image: url(../images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    width: 100%;
+    max-width: 400px;
+    padding: 20rem;
+    position: absolute;
+    background-position: center;
+    top: -220px;
+} */
 
 
 

@@ -1,3 +1,3 @@
 # Accordian-FAQ-Card
 
-[Link to Porject](faq-accordian-card-proj.netlify.app)
+[Link to Project](faq-accordian-card-proj.netlify.app)

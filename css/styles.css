@@ -35,6 +35,7 @@ body {
     height: fit-content;
     position: relative;
     width: 85%;
+    margin: 10rem 0 0 0;
 }
 
 .bg-woman-mobile{
@@ -70,7 +71,7 @@ body {
 }
 
 .main-heading {
-    margin-top: 16rem;
+    margin-top: 14rem;
     margin-bottom: 2rem;
     font-size: 4rem;
     font-weight: 700;
@@ -186,8 +187,7 @@ body {
 }
 
 .attribution {
-    position: absolute;
-    bottom: 0px;
+    position: relative;
     font-size: 1.2rem;
     text-align: center;
 }

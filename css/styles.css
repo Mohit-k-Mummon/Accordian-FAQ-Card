@@ -13,7 +13,7 @@ html {
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -48,6 +48,18 @@ body {
     background-position: center;
     top: -220px;
 }
+
+ @media screen and (max-width: 375px) {
+    .bg-woman-mobile {
+        padding: 15rem;
+        top: -160px;
+    }
+
+    .bg-pattern {
+        transform: scale(0.85);
+        top: -5px;
+    }
+ }
 
 .bg-pattern {
     position: absolute;
@@ -173,36 +185,12 @@ body {
     }
 }
 
-/* .bg-woman-mobile{
-    background-image: url(../images/illustration-woman-online-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: 75%;
-    width: 100%;
-    max-width: 400px;
-    padding: 20rem;
-    position: absolute;
-    background-position: center;
-    top: -220px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution {
-    font-size: 11px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.2rem;
     text-align: center;
 }
 .attribution a {
-    color: hsl(125, 83%, 41%);
+    color: hsl(0, 0%, 100%);
 }

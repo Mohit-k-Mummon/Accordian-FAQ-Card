@@ -17,3 +17,6 @@
 .prettierignore
 
 *.md
+
+/dist
+/.parcel-cache

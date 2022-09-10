@@ -18,12 +18,45 @@
 		<title>Frontend Mentor | Accordian FAQ</title>
 	</head>
 	<body>
-		<div class="main-container">
-			<img class="bg-woman-mobile" alt="" />
-			<img class="bg-pattern" src="images/bg-pattern-mobile.svg" alt="" />
-
-			<div class="accordian-container">
-				<h2 class="main-heading">FAQ</h2>
+		<div class="faq">
+			<section class="faq__image-container">
+				<div class="faq__main-image-container">
+					<picture class="faq__woman-illustration">
+						<source
+							media="(max-width: 1109px)"
+							srcset="images/illustration-woman-online-mobile.svg"
+						/>
+						<source
+							media="(min-width: 1110px)"
+							srcset="images/illustration-woman-online-desktop.svg"
+						/>
+						<img
+							src="images/illustration-woman-online-mobile.svg"
+							alt="image of woman online looking at screen"
+							class="faq__woman-image"
+						/>
+					</picture>
+					<picture class="faq__shadow-illustration">
+						<source media="(max-width: 1109px)" srcset="images/bg-pattern-mobile.svg" />
+						<source
+							media="(min-width: 1110px)"
+							srcset="images/bg-pattern-desktop.svg"
+						/>
+						<img
+							class="faq__shadow-image"
+							src="images/bg-pattern-mobile.svg"
+							alt="shadow"
+						/>
+					</picture>
+				</div>
+			</section>
+			<img
+				src="images/illustration-box-desktop.svg"
+				alt="box"
+				class="faq__box-illustration"
+			/>
+			<div class="faq__main-container">
+				<h2 class="faq__main-heading">FAQ</h2>
 				<div class="content-container">
 					<div class="question">How many team members can I invite?</div>
 					<div class="answer">
@@ -59,6 +92,12 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+			>. Coded by
+			<a href="https://github.com/Mohit-k-Mummon" target="_blank">Mohit K Mummon</a>.
 		</div>
 	</body>
 </html>

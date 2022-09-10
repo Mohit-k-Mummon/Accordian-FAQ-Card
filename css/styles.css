@@ -128,7 +128,8 @@ body {
     .faq__main-heading {
         text-align: left;
         margin: 0 0 2rem;
-        padding-right: 23rem;
+        position: relative;
+        right: 12.5rem;
     }
 }
 

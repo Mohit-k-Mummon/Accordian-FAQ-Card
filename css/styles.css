@@ -38,18 +38,28 @@ body {
     position: relative;
     width: 85%;
     max-width: 900px;
-    margin: 20rem 0 10rem 0;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159)
 }
 
 @media screen and (min-width: 1110px) {
+    .wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: 900px;
+        transform: scale(1);
+    }
     .faq {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        position: static;
         max-width: 900px;
+        overflow: hidden;
     }
+
 }
 
 
@@ -91,12 +101,10 @@ body {
 
 @media screen and (min-width: 1110px) {
     .faq__image-container {
-        overflow: hidden;
         height: 50rem;
     }
     .faq__woman-image {
         transform: translate(-11rem, 22rem) scale(1.2);
-        overflow: hidden;
     }
     .faq__shadow-image {
         transform: scale(2);
@@ -104,10 +112,11 @@ body {
         top: 15rem;
         left: -21.5rem;
     }
+
     .faq__box-illustration {
         position: absolute;
         display: block;
-        top: 21rem;
+        top: 38%;
         left: -9.3rem;
     }
 }

@@ -30,6 +30,7 @@ body {
 .wrapper {
     width: 85%;
     height: 100%;
+    margin: 18rem 0;
 }
 
 .faq {
@@ -238,8 +239,8 @@ body {
 .attribution {
     position: absolute;
     font-size: 1.2rem;
-    bottom: 0;
     text-align: center;
+    bottom: 0;
 }
 .attribution a {
     color: hsl(0, 0%, 100%);

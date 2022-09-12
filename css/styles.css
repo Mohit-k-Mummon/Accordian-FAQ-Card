@@ -240,7 +240,7 @@ body {
     position: absolute;
     font-size: 1.2rem;
     text-align: center;
-    bottom: 0;
+    bottom: 1rem;
 }
 .attribution a {
     color: hsl(0, 0%, 100%);
